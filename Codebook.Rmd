@@ -1,0 +1,12 @@
+Codebook
+========================================================
+
+This code book describes the variables, the data, and transformations that were performed on the 'Human Activity Recognition Using Smartphones Data Set' available from the UCI Machine Learning Repository (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
+
+From the original datasets in the UCI website, I have used a script run_analysis.R to produce a much reduced dataset that includes useful variables. The variables include summary data (mean and standard deviation) for time domain measurement in the 3-axial directions x, y and z. The mean of these variables are summarised for each subject per activity. Its expected that the means thus computed can be further analysed to using any of the standard algorithms such as RF (random forest), CART (classification and regression trees), ANN (artificial neural networks), etc
+
+Note that I included the fastfourier transform means for the sake of completeness; since this data does not provide the time at which this signal occured, the only benefit we can think of is the possibility that it can be further analyzed using Multi-resolution analysis (MRA) to overcome the shortfalls of frequency analysis.
+
+The names of the variables are exactly as from the dataset except for some transformation to conform to R naming convention.
+
+The 
